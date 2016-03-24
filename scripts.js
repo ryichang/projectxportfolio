@@ -38,10 +38,6 @@ $.ajax({
     }
 });
 
-	$('.submit').prop('disabled',true); 
-	  $('#inputMessage').keyup(function(){ 
-	      $('.submit').prop('disabled', this.value === "" ? true : false); 
-	  }); 
 
 // select the form and serialize data 
 // var signupData = $("#signup-form").serialize();
