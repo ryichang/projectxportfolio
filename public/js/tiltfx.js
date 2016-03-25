@@ -114,7 +114,7 @@
 	 */
 	TiltFx.prototype.options = {
 		// number of extra image elements (div with background-image) to add to the DOM - min:1, max:5 (for a higher number, it's recommended to remove the transitions of .tilt__front in the stylesheet.
-		extraImgs : 2,
+		extraImgs : 4,
 		// the opacity value for all the image elements.
 		opacity : 0.7,
 		// by default the first layer does not move.
@@ -122,11 +122,11 @@
 		// image element's movement configuration
 		movement : {
 			perspective : 1000, // perspective value
-			translateX : -10, // a relative movement of -10px to 10px on the x-axis (setting a negative value reverses the direction)
-			translateY : -10, // a relative movement of -10px to 10px on the y-axis 
+			translateX : -20, // a relative movement of -10px to 10px on the x-axis (setting a negative value reverses the direction)
+			translateY : -20, // a relative movement of -10px to 10px on the y-axis 
 			translateZ : 20, // a relative movement of -20px to 20px on the z-axis (perspective value must be set). Also, this specific translation is done when the mouse moves vertically.
-			rotateX : 2, // a relative rotation of -2deg to 2deg on the x-axis (perspective value must be set)
-			rotateY : 2, // a relative rotation of -2deg to 2deg on the y-axis (perspective value must be set)
+			rotateX : 10, // a relative rotation of -2deg to 2deg on the x-axis (perspective value must be set)
+			rotateY : 10, // a relative rotation of -2deg to 2deg on the y-axis (perspective value must be set)
 			rotateZ : 0 // z-axis rotation; by default there's no rotation on the z-axis (perspective value must be set)
 		}
 	};
