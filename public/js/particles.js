@@ -12,7 +12,7 @@ function launchParticlesJS(a, e) {
       opacity: 1,
       size: 6,
       size_random: true,
-      nb: 100,
+      nb: 70,
       line_linked: {
         enable_auto: true,
         distance: 100,
@@ -431,7 +431,7 @@ window.particlesJS = function(d, c) {
   }
   var b = document.createElement("canvas");
   b.style.width = "100%";
-  b.style.height = "400px";
+  b.style.height = "500px";
   var a = document.getElementById(d).appendChild(b);
   if (a != null) {
     launchParticlesJS(d, c)
