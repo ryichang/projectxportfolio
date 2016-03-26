@@ -28,7 +28,7 @@ $.ajax({
     success: function (json) {
         $.each(json.data, function () {
             var thisdata = this;
-            $('.instagram-gallery').append("<div class='instagram-img'><div class='imagebox'><span class='likes'>" + this.likes.count + "</span><img src='" + this.images.thumbnail.url + "'/></div></div>");
+            $('.instagram-gallery').append("<a href='" + this.link + "' target='_blank'><div class='instagram-img'><div class='imagebox'><span class='likes'>" + this.likes.count + "</span><img src='" + this.images.thumbnail.url + "'/></div></div></a>");
         });
         var $container = $('.instagram-gallery');
         // initialize
@@ -43,21 +43,21 @@ var lastCard = $(".card-list .card").length - 1;
 
 
 //nav on scroll 
-// $(function () { 
-//     var down = false;
-//     var menuOn = false;
-//     $(window).on('scroll', function() {
-//         var scrollTop = $(this).scrollTop();    
-//         if ( scrollTop > 10 && down === false) {
-//             $('#header').animate({"top": 0}, 300 );
-//             down = true;
-//         } 
-//         if ( scrollTop < 0 && down === true) {
-//             $('#header').animate({"top": -200}, 300 );
-//             down = false;
-//         }
-//     });            
-// });
+$(function () { 
+    var down = false;
+    var menuOn = false;
+    $(window).on('scroll', function() {
+        var scrollTop = $(this).scrollTop();    
+        if ( scrollTop > 5 && down === false) {
+            $('#header').animate({"top":  -200}, 300 );
+            down = true;
+        } 
+        if ( scrollTop < 10 && down === true) {
+            $('#header').animate({"top": 0}, 300 );
+            down = false;
+        }
+    });            
+});
 
 // //Floating Menu 
 // $float_speed=1000; //milliseconds

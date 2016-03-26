@@ -10,9 +10,9 @@ function launchParticlesJS(a, e) {
       color: "#454545",
       shape: "circle",
       opacity: 1,
-      size: 6,
+      size: 3,
       size_random: true,
-      nb: 70,
+      nb: 100,
       line_linked: {
         enable_auto: true,
         distance: 100,
@@ -431,7 +431,7 @@ window.particlesJS = function(d, c) {
   }
   var b = document.createElement("canvas");
   b.style.width = "100%";
-  b.style.height = "500px";
+  b.style.height = "450px";
   var a = document.getElementById(d).appendChild(b);
   if (a != null) {
     launchParticlesJS(d, c)
