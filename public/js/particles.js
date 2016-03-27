@@ -8,7 +8,7 @@ function launchParticlesJS(a, e) {
     },
     particles: {
       color: "#fff",
-      shape: "circle",
+      shape: "polygon",
       opacity: 1,
       size: 2,
       size_random: true,
@@ -17,8 +17,8 @@ function launchParticlesJS(a, e) {
         enable_auto: true,
         distance: 100,
         color: "#fff",
-        opacity: 1,
-        width: 1,
+        opacity: 1.1,
+        width: 0.9,
         condensed_mode: {
           enable: true,
           rotateX: 65000,
@@ -27,7 +27,7 @@ function launchParticlesJS(a, e) {
       },
       anim: {
         enable: true,
-        speed: 3
+        speed: 2
       },
       array: []
     },
